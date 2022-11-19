@@ -4,6 +4,12 @@ body {
   background-color: #0d8828;
 }
 
+h1 {
+  color: aliceblue;
+  font-style: italic;
+  transition: 3s;
+}
+
 #carta {
   width: 10cm;
   height: 13.5cm;
@@ -34,7 +40,7 @@ body {
 
 #simboloAbajo {
   float: right;
-  right: 12px;
+  right: 13px;
   bottom: -50;
   color: red;
   font-size: 100px;

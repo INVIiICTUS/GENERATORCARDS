@@ -20,9 +20,9 @@ const valores = [
   "Q",
   "K"
 ];
-let paloArriba = document.querySelector("#simboloArriba");
+let simArriba = document.querySelector("#simboloArriba");
 let numero = document.querySelector("#numero");
-let paloAbajo = document.querySelector("#simboloAbajo");
+let simAbajo = document.querySelector("#simboloAbajo");
 
 function cartaEllection(arr1, arr2) {
   let carta = [];
@@ -33,29 +33,29 @@ function cartaEllection(arr1, arr2) {
 
 function colorEllection(arr) {
   if (arr[0] === "corazon" || arr[0] === "diamante") {
-    paloArriba.style.color = "red";
+    simArriba.style.color = "red";
     numero.style.color = "red";
-    paloAbajo.style.color = "red";
+    simAbajo.style.color = "red";
   } else {
-    paloArriba.style.color = "black";
+    simArriba.style.color = "black";
     numero.style.color = "black";
-    paloAbajo.style.color = "black";
+    simAbajo.style.color = "black";
   }
 }
 
 function asignarPalo(arr) {
   if (arr[0] === "corazon") {
-    paloArriba.innerHTML = "♥";
-    paloAbajo.innerHTML = "♥";
+    simArriba.innerHTML = "♥";
+    simAbajo.innerHTML = "♥";
   } else if (arr[0] === "diamante") {
-    paloArriba.innerHTML = "♦";
-    paloAbajo.innerHTML = "♦";
+    simArriba.innerHTML = "♦";
+    simAbajo.innerHTML = "♦";
   } else if (arr[0] === "trebol") {
-    paloArriba.innerHTML = "♣";
-    paloAbajo.innerHTML = "♣";
+    simArriba.innerHTML = "♣";
+    simAbajo.innerHTML = "♣";
   } else {
-    paloArriba.innerHTML = "♠";
-    paloAbajo.innerHTML = "♠";
+    simArriba.innerHTML = "♠";
+    simAbajo.innerHTML = "♠";
   }
 }
 
