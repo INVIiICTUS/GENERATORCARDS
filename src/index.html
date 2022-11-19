@@ -1,13 +1,41 @@
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
     <link rel="stylesheet" href="cartas-style.css" type="text/css" />
     <title>Genereador de cartas</title>
-  </head>
+</head>
 
-  <body></body>
+<body>
+    <h2 class="position-absolute top-0 start-50 translate-middle-x mt-2 fs-1 fst-italic" style="color: white">Prueba Suerte</h2>
+    <div id="carta">
+        <div id="simboloArriba"></div>
+        <div id="numero">A</div>
+        <div id="simboloAbajo"></div>
+    </div>
+    <div id="botoncenter">
+        <button class="button" style="vertical-align:middle">
+            <span><strong>CARD</strong></span>
+            <button class="button2" id="btnCuentaAtras" style="vertical-align:middle">
+                <span id="cuentaAtras"><strong>START</strong></span>
+            </button>
+            <div>
+                <h3 style="color: rgb(255, 255, 255);"><strong></strong>
+                    Cuenta atras para nueva carta
+                    </strong></h3>
+                <input type="number" class="form-control" id="segundos" size="20px" placeholder="Introduce un numero" />
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="notificacion"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a class=" fs-6" href="https://cdn.memegenerator.es/imagenes/memes/full/31/59/31596887.jpg" style="color: white;">No toque aqui...</a>
+            <script src="app.js"></script>
+</body>
+
 </html>
